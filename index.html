@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Turunan</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.11.1/math.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<style>
+    body {
+        background: rgb(230, 230, 230);
+    }
+
+</style>
+
+<body>
+    <div class="container">
+        <div class="row p-4">
+            <div class="text-center">
+                <h3>Universitas Dian Nusantara</h3>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-lg-2">
+                    <h3>Data Diri</h3>
+                </div>
+                <div class="col-md-4 col-lg-10 mt-2">
+                    <table class="table">
+                        <tr>
+                            <th style="background: none;">Nama</th>
+                            <td style="background: none;"> : Marviel David</td>
+                        </tr>
+                        <tr>
+                            <th style="background: none;">NIM</th>
+                            <td style="background: none;"> : 411231222</td>
+                        </tr>
+                        <tr>
+                            <th style="background: none;">Prodi</th>
+                            <td style="background: none;"> : Teknik Informatika</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>
+                        Penjelasan dari Turunan
+                    </h3>
+                    <p>
+                        Sekarang saatnya kita lanjut belajar kalkulus dasar turunan. Definisi turunan adalah perubahan nilai fungsi pada waktu
+                        titik yang sangat kecil (laju perubahan nilai/nilai sesaat).
+                    </p>
+                        <p>
+                            Contoh:
+                            <br>
+                            f(x) = 5x^10 – 3x^8 + 4x^2 – 5
+                            <br>
+                            f'(x) = 50x^9 – 24x^7 + 8x
+                        </p>
+                        <p>
+                            Beberapa materi fisika yang menggunakan turunan diantaranya GLBB (kecepatan / percepatan sesaat), relativitas, induksi
+                            elektromagnetik, dan lain–lain.
+                        </p>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <h3>Kalkulator</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>Masukkan fungsi f(x)</p>
+                        <input type="text" id="inputFunction" style="background: none;">
+                        <button onclick="hitungTurunan()" class="btn btn-success">hitung</button>
+                    </div>
+                    <div class="col-md-6">
+                        <p> Turunan : <span id="result"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
